@@ -1,0 +1,44 @@
+
+How to play:
+Please watch this youtube video if you don't know how to play GoFish:
+https://www.youtube.com/watch?v=-2z9xZYWqmo
+
+In console do the following:
+1. Go into directory "goFish"
+2. type the following: pip install pydealer (this will install the library needed for the cards)
+3. now to play, type: python playGoFish.py
+4. Switching between players:
+   Whenever you see a countdown 5... 4... 3... 2.. 1 quickly give the laptop to the next player, because by then your deck will be hidden and the other person's deck will be shown
+
+
+Cards and deck:
+Used library provided by pydealer to save time and leverage pre-existing libraries rather than building from scratch
+
+Player
+    Purpose was to emulate actions and characteristics of a real player.
+    variables:
+        -name: player's name
+        -hand: the cards a player has
+        -n_fours: track all the sets of 4 cards the user has been able to collect (the person with the most 4 card groups wins.)
+    functions:
+        -see_hand: user can see their own hand
+        -give_cards: user gives away cards of a certain rank, empty if none such card
+        -add_cards: adds cards of certain rank given by another user
+        -store_away: stores away any groupings of 4 of the same rank card
+        -draw_from_deck: draws random cards from deck.
+        -hide_deck: hides deck before the next player can see their cards
+        -hasRank: checks if player has cards of certain rank
+
+goFish:
+    Contains the code for the real game
+    Variables:
+        -deck: deck used in the game
+        -players: dictionary of players with key being player_name
+        -list_of_players: names of all players in the game
+        -n_players: total number of players
+
+    Functions:
+        -ask_cards: asking and getting card's from a player, else player will say "go fish!"
+        -play: game play that ends when cards are no longer in deck and players have no cards. winner is determined by the person with most fours of ranks.
+        -players_have_cards: check if players have cards in their hands and this condition is needed to continue game play
+
