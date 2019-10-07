@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4aec56d-4b5a-4cec-b0c5-023796298635" name="Default Changelist" comment="" />
+    <list default="true" id="d4aec56d-4b5a-4cec-b0c5-023796298635" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playGoFish.py" beforeDir="false" afterPath="$PROJECT_DIR$/playGoFish.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,22 +32,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gamePlay.py">
+        <entry file="file://$PROJECT_DIR$/playGoFish.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2580">
-              <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/playGoFish.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="82" column="21" lean-forward="true" selection-end-line="172" />
+            <state relative-caret-position="353">
+              <caret line="116" column="34" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -80,7 +71,11 @@
       <find>ADD</find>
       <find>get_list</find>
       <find>give_cards</find>
+      <find>lower</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -90,6 +85,7 @@
         <option value="$USER_HOME$/Desktop/playGoFish.py" />
         <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/gamePlay.py" />
+        <option value="$PROJECT_DIR$/playGoFish.py" />
       </list>
     </option>
   </component>
@@ -99,6 +95,7 @@
     <option name="width" value="1017" />
     <option name="height" value="796" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -176,7 +173,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gamePlay.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/playGoFish.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,12 +200,12 @@
       <option name="presentableId" value="Default" />
       <updated>1570335576059</updated>
       <workItem from="1570335577466" duration="164000" />
-      <workItem from="1570335833192" duration="21482000" />
+      <workItem from="1570335833192" duration="22024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21646000" />
+    <option name="totallyTimeSpent" value="22188000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="309" y="23" width="1017" height="796" extended-state="0" />
@@ -268,10 +265,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gamePlay.py">
+    <entry file="file://$PROJECT_DIR$/playGoFish.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2580">
-          <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
+        <state relative-caret-position="353">
+          <caret line="116" column="34" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

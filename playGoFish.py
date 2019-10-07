@@ -45,8 +45,6 @@ class Player:
 
     def add_cards(self, cards):
         self.hand.add(cards)
-        # print("ADDED CARDS")
-        # print(self.hand)
         self.store_away()
 
     def store_away(self):
@@ -71,7 +69,7 @@ class Player:
     def hide_deck(self):
         print("Hiding your deck so next player's turn can begin...")
         for i in range(5,0,-1):
-            time.sleep(1)
+            time.sleep(2)
             print(str(i) + "..." )
         system('cls' if name == 'nt' else 'clear')
         print(self.name + "'s deck is now hidden")
@@ -90,18 +88,18 @@ class goFish:
         self.list_of_players = list_of_players
         self.n_players = len(list_of_players)
         for player_name in list_of_players:
-            self.players[player_name.lower()] = Player(player_name.lower(), self.deck, self.n_players)
+            self.players[player_name] = Player(player_name, self.deck, self.n_players)
 
     def ask_cards(self, asker_name, askee_name, rank):
         asker = self.players[asker_name]
         askee = self.players[askee_name]
         askee_rank_cards = askee.give_cards(rank)
         if len(askee_rank_cards) > 0:
-            print(askee_name + " gave you their" + str(askee_rank_cards) + " cards. ")
+            print("YAY! " + askee_name + " gave you their" + str(askee_rank_cards) + " cards. ")
             asker.add_cards(askee_rank_cards)
             return True
         else:
-            print("Go Fish!")
+            print("GO FISH!")
             asker.draw_from_deck(self.deck, 1)
             return False
 
@@ -114,9 +112,9 @@ class goFish:
                 print("Hand is empty so will draw cards.")
                 player.draw_from_deck(self.deck, 5)
             player.see_hand()
-            print("Type in the player and the suit you want to ask from them")
-            print("Example format: Meg Queen")
-            print("Example format: Vicky 10")
+            print("Type in the player and the suit you want to ask from them: ")
+            print("Example format:Meg Queen")
+            print("Example format:Vicky 10")
             user_input = input().split(" ")
             while(len(user_input) != 2):
                 print("Invalid input. Please follow the format given.")
