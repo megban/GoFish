@@ -42,3 +42,15 @@ goFish:
         -play: game play that ends when cards are no longer in deck and players have no cards. winner is determined by the person with most fours of ranks.
         -players_have_cards: check if players have cards in their hands and this condition is needed to continue game play
 
+
+Checks:
+- Checks that user has rank, when they ask another user for cards of that rank
+- Checks number of players before dealing cards, 5 cards if more than 3 players else 7
+- Checks whether there is 4 of a kind whenever user gets new cards so that score can be updated
+- Checks when user's hand is empty and then adds 5 cards from deck
+    - Checks if deck has less than 5 cards and then gives user all remaining cards
+- Hides deck before next user can play their turn
+- Keeps track of turns and when user can repeat turns with i that keeps track of current player turn
+- Checks if user put in more than one player when playing
+- Checks if user put in valid player to ask cards from
+- Checks for multiple winners with same score
